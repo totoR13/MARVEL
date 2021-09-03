@@ -22,6 +22,12 @@ The repo contains the following folders:
 
 For more details, please refer to the `READMEs` in the specific folders.
 
+## ❱ License
+
+This tool is available under a dual license: a commercial one required for closed source projects or commercial projects, and an AGPL license for open-source projects.
+
+Depending on your needs, you must choose one of them and follow its policies. A detail of the policies and agreements for each license type is available in the [LICENSE.COMMERCIAL](LICENSE.COMMERCIAL) and [LICENSE](LICENSE) files.
+
 ## ❱ Credits
 [![Unige](https://intranet.dibris.unige.it/img/logo_unige.gif)](https://unige.it/en/)
 [![Dibris](https://intranet.dibris.unige.it/img/logo_dibris.gif)](https://www.dibris.unige.it/en/)
