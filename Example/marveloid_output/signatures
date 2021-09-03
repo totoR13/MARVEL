@@ -1,0 +1,4 @@
+{"newClassName":"A83e5042fc93f494c8262cdbf24c08670e824bc25d86a44caad865e3d0b604653","bytecodeSignature":"br.com.cjdinfo.puzzle.ConfiguracaoActivity: selOptSize(Landroid/view/View;)V","folder":"b268270f972846c497c82de535f73158"}
+{"newClassName":"A0b3d57c06e0e4709a09c01751a15fa7aa72fa4f974904f3fa94950c233c59362","bytecodeSignature":"br.com.cjdinfo.puzzle.PopUp: alert(Landroid/content/Context;Ljava/lang/String;)V","folder":"96ffa9ad807242e39e9f9567bba6b09b"}
+{"newClassName":"Acedd89cab9414ce3a2bfbfd802091c46d6048d2ae3a346c2836a8f397236096c","bytecodeSignature":"br.com.cjdinfo.puzzle.MainActivity: access$000(Lbr/com/cjdinfo/puzzle/MainActivity;)Z","folder":"226a567711094a13b61707e7ec715686"}
+{"newClassName":"A9b81a120ddee4dee93c3ae6bc4f06cea81b4000dd60e4ad4bfbc581f89b2244d","bytecodeSignature":"br.com.cjdinfo.puzzle.MainActivity: incTotaliz(Ljava/lang/String;)V","folder":"d6b0e76f38674d2b976cef233d84db83"}

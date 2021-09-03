@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+    executor:
+        build: 
+            context: ../
+            dockerfile: Docker/Dockerfile
+        volumes: 
+        - ${MARVELOID_RESULTS}:/workdir/output:rw
+        - ${INPUT_APP_PATH}:/workdir/input:ro
+        command: -p 1 -k --host postgres /workdir/input
+        depends_on:
+        - postgres
+
+    postgres:
+        image: postgres:latest
+        restart: unless-stopped
+        hostname: postgres
+        ports:
+        - "5432:5432"
+        environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=transformer
+        volumes:
+        - ${PWD}/pg-data:/var/lib/postgresql/data

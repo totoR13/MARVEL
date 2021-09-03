@@ -1,0 +1,51 @@
+transformers/BaseBodyTransformer.java
+ transformers.BaseBodyTransformer
+transformers/Injector.java
+ transformers.Injector
+models/ProtectorInfo.java
+ models.ProtectorInfo
+embedded/JavaIntegrityChecks.java
+ embedded.JavaIntegrityChecks
+models/JavaIntegrityCheckWrapper.java
+ models.JavaIntegrityCheckWrapper
+ models.JavaIntegrityCheckWrapper$Argument
+ models.JavaIntegrityCheckWrapper$ExpectedValue
+models/InjectedInfo.java
+ models.InjectedInfo
+models/HookInfo.java
+ models.HookInfo
+transformers/Protector.java
+ transformers.Protector
+utils/ManifestHelper.java
+ utils.ManifestHelper
+ utils.ManifestHelper$1
+ utils.ManifestHelper$1$1
+ utils.ManifestHelper$2
+ utils.ManifestHelper$2$1
+ utils.ManifestHelper$2$1$1
+ utils.ManifestHelper$3
+ utils.ManifestHelper$3$1
+ utils.ManifestHelper$3$1$1
+utils/UnitHelper.java
+ utils.UnitHelper
+utils/Random.java
+ utils.Random
+models/IntegrityInfo.java
+ models.IntegrityInfo
+ models.IntegrityInfo$SignatureInfo
+transformers/Extractor.java
+ transformers.Extractor
+embedded/EncryptHelper.java
+ embedded.EncryptHelper
+embedded/UtilHelper.java
+ embedded.UtilHelper
+models/Stats.java
+ models.Stats
+transformers/AppTransformer.java
+ transformers.AppTransformer
+models/CmdOption.java
+ models.CmdOption
+main/Main.java
+ main.Main
+utils/DexPrinter.java
+ utils.DexPrinter
