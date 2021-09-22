@@ -65,7 +65,7 @@ def protect_apk(apk_path, chance_extractor, chance_encryptor, chance_injector, o
         print(f"[*] Creating output folder {apk_output_folder}")
         
         # TODO: update paths of android jars and keystore
-        cmd = f"java -jar /jars/transformer.jar -i {apk_path} -o {apk_output_folder} -a /jars/resources/platforms --keystore-path /keytools/my-release-key.keystore --keystore-pass \"test123\" --run-injector \"true\" --run-protector \"true\" --extractor-chance {chance_extractor} --encryption-chance {chance_encryptor} --injection-chance {chance_injector} -j $(which jarsigner)"
+        cmd = f"java -jar /jars/transformer.jar -i {apk_path} -o {apk_output_folder} -a /jars/resources/platforms --keystore-path /keytools/my-release-key.keystore --keystore-pass \"test123\" --run-injector \"true\" --run-protector \"true\" --extractor-chance {chance_extractor} --encryption-chance {chance_encryptor} --injection-chance {chance_injector} -j \"/usr/bin/jarsigner\""
         start = time()
         success, message = run_shell_command(cmd)
         execution_time = time() - start
