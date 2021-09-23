@@ -29,6 +29,8 @@ OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2.18.04)
 OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2.18.04, mixed mode, sharing)
 ```
 
+> Note: Due to MARVELoid leverage Soot framework, we suggest to build the output jar file with Java 8  
+
 ## Building
 
 > **Note** Before building the project, update the dependency into the `build.gradle` file related to the Android sdk. 
@@ -55,6 +57,14 @@ MARVELoid-1.0.jar [...]
 ```
 
 A latest version of the jar file is available in the [Binaries folder](../../Binaries).
+
+We built the MARVELoid jar file with Java 8:
+```console
+$ java -version
+openjdk version "1.8.0_292"
+OpenJDK Runtime Environment (build 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10)
+OpenJDK 64-Bit Server VM (build 25.292-b10, mixed mode)
+```
 
 ## Usage
 
