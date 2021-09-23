@@ -93,7 +93,13 @@ public class Main {
         PackManager.v().writeOutput();
 
         // Perform post operation after transformation
-        appTransformer.postActivities(false, arguments.get(CMD_ARGUMENTS[11]),
+        File apkFile = new File(outputFolder + "/" + (new File(arguments.get(CMD_ARGUMENTS[3]))).getName());
+        if (!apkFile.exists()) {
+            System.out.println("Error: the protected apk is not present in the output folder " + outputFolder);
+            System.exit(1);
+        }
+
+        appTransformer.postActivities(false, apkFile,  arguments.get(CMD_ARGUMENTS[11]),
                 arguments.get(CMD_ARGUMENTS[12]), arguments.get(CMD_ARGUMENTS[13]), arguments.get(CMD_ARGUMENTS[14]));
 
         stats.printStats();

@@ -52,23 +52,24 @@ public class AppTransformer extends SceneTransformer {
      * -) Update the activity class in the manifest file if the updateAppInManifest flag is true
      *
      * @param updateAppInManifest true if an update of the android manifest is needed
+     * @param apkFile The file object of the protected apk
      * @param jarsignerPath The absolute path of the jarsigner executable
      * @param keystorePath The absolute path of the keystorePath
      * @param keystorePass The password of the keystore
      * @param aliasName The alian name of the keystore
      */
-    public void postActivities(boolean updateAppInManifest, String jarsignerPath, String keystorePath, String keystorePass, String aliasName) {
+    public void postActivities(boolean updateAppInManifest, File apkFile, String jarsignerPath, String keystorePath, String keystorePass, String aliasName) {
 
         String apkPath = null;
         try {
             // Update manifest
             if (updateAppInManifest) {
-                ManifestHelper.updateApplicationClassName(applicationClass.getName());
+                ManifestHelper.updateApplicationClassName(applicationClass.getName(), apkFile);
             }
 
             // get output apk path
-            File apkFile = SourceLocator.v().dexClassIndex().values().stream().findFirst().orElseThrow(IllegalStateException::new);
-            apkPath = Paths.get(SourceLocator.v().getOutputDir(), apkFile.getName()).toString();
+            // File apkFile = SourceLocator.v().dexClassIndex().values().stream().findFirst().orElseThrow(IllegalStateException::new);
+            apkPath = apkFile.getPath(); // Paths.get(SourceLocator.v().getOutputDir(), apkFile.getName()).toString();
 
             // Sign output apk file
             // Run command -> jarsigner -storepass "key" -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore <path/to/app> my-key-alias

@@ -121,8 +121,8 @@ public class ManifestHelper {
      *
      * @param newApplicationPath the new application path
      */
-    public static void updateApplicationClassName(String newApplicationPath) {
-        File apkFile = SourceLocator.v().dexClassIndex().values().stream().findFirst().orElseThrow(IllegalStateException::new);
+    public static void updateApplicationClassName(String newApplicationPath, File apkFile) {
+        // File apkFile = SourceLocator.v().dexClassIndex().values().stream().findFirst().orElseThrow(IllegalStateException::new);
         try (FileSystem apk = FileSystems.newFileSystem(Paths.get(SourceLocator.v().getOutputDir(), apkFile.getName()), null)) {
             Path mfPath = apk.getPath("/AndroidManifest.xml");
             AxmlReader reader = new AxmlReader(Files.readAllBytes(mfPath));
