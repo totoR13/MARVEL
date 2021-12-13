@@ -10,6 +10,7 @@ This repository contains the implementation of MARVEL that consists of:
 Code splitting allows to remove portions of code from the original app, thus introducing mitigation against static analysis inspection.
 IATs involve the injection of integrity controls, evaluated during the interaction between the Trusted Container and a plugin app.
 
+
 ## ❱ Repository structure
 
 The repo contains the following folders:
@@ -21,6 +22,36 @@ The repo contains the following folders:
 * `Sources` - the source code of the MARVELoid tool and of the Trusted Container Android app.
 
 For more details, please refer to the `READMEs` in the specific folders.
+
+
+## ❱ Pubblication
+
+More details can be found in the ACSAC '21 paper
+"[Repack Me If You Can: An Anti-Repackaging Solution based on Android Virtualization](https://dl.acm.org/doi/10.1145/3485832.3488021)".
+
+You can cite the paper as follows:
+```BibTeX
+@inproceedings{ruggia2021repack,
+    author = {Ruggia, Antonio and Losiouk, Eleonora and Verderame, Luca and Conti, Mauro and Merlo, Alessio},
+    title = {Repack Me If You Can: An Anti-Repackaging Solution Based on Android Virtualization},
+    year = {2021},
+    publisher = {Association for Computing Machinery},
+    url = {https://doi.org/10.1145/3485832.3488021},
+    doi = {10.1145/3485832.3488021},
+    booktitle = {Annual Computer Security Applications Conference},
+    series = {ACSAC}
+}
+
+```
+
+---
+
+<p align="center">
+  <img src="./artifacts_evaluated_reusable_v1_1.png" alt="Reusable ACSAC21 Artifact Badge" width="200" /> 
+</p>
+
+The content of this repository has been submittes as Artifact for the ACSAC '21 conference and receive the REUSABLE badge.
+
 
 ## ❱ License
 
